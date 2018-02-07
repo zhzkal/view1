@@ -121,6 +121,7 @@
                     android:textOn="토글 켜짐"
                     android:textOff="토글 끔"
                     />
+                <!-- 뭐가 에러지..-->
 
             </LinearLayout>
 
