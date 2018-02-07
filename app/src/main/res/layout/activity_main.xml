@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#ffff00"
+                android:gravity="left|center"
+                android:padding="10dp"
+                android:text="Hello World! 추가한 문자열"
+                android:textColor="#ff0000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" 선택 "
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:inputType="number"
+                android:text="1에딧텍스트입니당."
+                android:textColor="#329191"
+                android:textSize="30sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:inputType="date"
+                android:text="2에딧텍스트입니당."
+                android:textColor="#329191"
+                android:textSize="30sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:inputType="text"
+                android:text="3에딧텍스트입니당."
+                android:textColor="#329191"
+                android:textSize="30sp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <RadioButton
+                    android:id="@+id/radio01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="남성"
+                    android:textColor="#ff55aaff"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="여성"
+                    android:textColor="#ff55aaff"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="하루종일"
+                    android:textColor="#c31ec9"
+                    android:textSize="24dp" />
+
+                <CheckBox
+                    android:id="@+id/allDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_pika"
+                    />
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="토글 켜짐"
+                    android:textOff="토글 끔"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_pika"
+                android:layout_margin="50dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
